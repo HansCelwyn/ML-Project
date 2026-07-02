@@ -11,9 +11,9 @@ from imblearn.over_sampling import SMOTE
 student_df = pd.read_csv("../../student_lifestyle_100k.csv")
 
 print(student_df.head())
-print(">>>> count <<<<")
+print("count")
 print(student_df.count())
-print(">>>> info <<<<")
+print("info")
 print(student_df.info())
 
 numerical_columns = ['Age', 'CGPA', 'Sleep_Duration', 'Study_Hours', 'Social_Media_Hours', 'Physical_Activity', 'Stress_Level']
@@ -164,4 +164,3 @@ for exp_name, hidden, test_size, activation in experiments_6:
     run_experiment_smote(exp_name, hidden, test_size, activation)
 
 print("\n" + "="*20)
-print("No Experiment left")
